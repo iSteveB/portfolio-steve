@@ -1,0 +1,37 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-1;
+    transition: all 0.5s ease-in-out;
+
+    &-xl {
+        font-size: 5rem;
+    }
+    &-l {
+        font-size: 3rem;
+    }
+    &-s {
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    p {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        span:first-child,
+        span:last-child {
+            color: $color-4;
+        }
+
+        span:nth-child(3) {
+            color: $color-3;
+        }
+    }
+
+    @media screen and (max-width: 530px) {
+        &-xl {
+            font-size: 15vw;
+        }
+    }
+}

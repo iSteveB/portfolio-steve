@@ -1,0 +1,58 @@
+.stack-container {
+    vertical-align: middle;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    .stack-move-left,
+    .stack-move-right {
+        display: flex;
+        white-space: nowrap;
+    }
+
+    .stack-move-left {
+        animation: scrollLeft 35s linear infinite;
+    }
+    .stack-move-right {
+        animation: scrollRight 30s linear infinite;
+    }
+
+    img {
+        margin: 2rem 3rem;
+        height: 150px;
+        transition: all ease 0.3s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    @keyframes scrollLeft {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(-100%, 0);
+        }
+    }
+    
+    @keyframes scrollRight {
+        0% {
+            transform: translate(-100%, 0);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    @media screen and (max-width: 580px){
+        .stack-move-left {
+            animation: scrollLeft 20s linear infinite;
+        }
+        .stack-move-right {
+            animation: scrollRight 20s linear infinite;
+        }
+    }
+}

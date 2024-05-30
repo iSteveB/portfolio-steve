@@ -1,0 +1,25 @@
+.project-card-container {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .project-card {
+        margin: 10px;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 20px;
+
+    }
+
+    span {
+        font-size: 1rem;
+        background: $color-2;
+        margin-right: 8px;
+        padding: 0 8px;
+        border-radius: 12px;
+        color: #FFF;
+    }
+}

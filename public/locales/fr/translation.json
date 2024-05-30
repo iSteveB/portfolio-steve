@@ -1,0 +1,66 @@
+{
+    "common": {
+        "haveALook": "Visiter le site",
+        "cv": "Télécharger mon CV"
+    },
+    "homepage": {
+        "home": "Accueil",
+        "job" : "Développeur Web",
+        "skills": {
+            "title": "Compétences",
+            "performance": "Optimiser les sites web, pour augmenter la vitesse de chargement des pages et l'expérience utilisateur.",
+            "cleanCode": "Écrire du code facile à lire, à maintenir, et qui adhére aux bonnes pratiques.",
+            "responsive": "Concevoir des sites web de qualité, adaptés aux écrans de chacun."
+        },
+        "lastProjects": {
+            "title": "Derniers Projets"
+        }
+    },
+    "portfolio": {
+        "project1": {
+            "title": "Yummy Nouille",
+            "description": "Site web d'un restaurant utilisant l'API Google Maps."
+        },
+        "project2": {
+            "title": "Where In The World",
+            "description": "Application web présentant les pays du monde."
+        },
+        "project3": {
+            "title": "LoongStory",
+            "description": "Réseau social inspiré de Twitter."
+        },
+        "project4": {
+            "title": "Générateur de conseils",
+            "description": "Génère des conseils aléatoirement."
+        },
+        "project5": {
+            "title": "Four Cards Feature",
+            "description": "Utilisation de CSS Grid pour placer des élements."
+        },
+        "project6": {
+            "title": "Order Summary Component",
+            "description": "Composant permettant de faire une synthèse avant achat."
+        },
+        "project7": {
+            "title": "Travel Agency",
+            "description": "Site vitrine d'une agence de voyage."
+        },
+        "project8": {
+            "title": "Coming Soon Page",
+            "description": "Page d'attente intégrant une validation d'adresse mail"
+        },
+        "project9": {
+            "title": "Calculatrice",
+            "description": "Permet de réaliser des opérations simples."
+        }
+    },
+    "contact": {
+        "letsTalk": "Contactez-moi",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "email": "E-mail",
+        "text": "Votre message ici...",
+        "send": "Envoyer",
+        "greetings": " Merci pour votre message! 😊"
+    }
+}

@@ -1,0 +1,13 @@
+.contact {
+    @extend .home;
+
+    h1 {
+        margin: 2rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 8vh;
+        }
+    }
+}
