@@ -1,9 +1,9 @@
-import React from 'react';
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <div className='footer'>
-            <p>© 2023 - Steve Basse</p>
+            <p>© {year} - Steve Basse</p>
         </div>
     );
 };

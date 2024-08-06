@@ -1,0 +1,32 @@
+@mixin texture-1 {
+  background-color: $color-1;
+  background-image: radial-gradient(#000000 0.75px, $color-1 0.75px);
+  background-size: 15px 15px;
+}
+
+@mixin header {
+  font-family: $font-1;
+  font-size: 4.5rem;
+  color: $color-2;
+}
+
+@mixin title-1 {
+  font-family: $font-2;
+  margin: 0 2rem;
+  font-size: 3rem;
+  color: $color-2;
+}
+
+@mixin title-2 {
+  font-family: $font-3;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color-2;
+}
+
+@mixin body-highlight($size) {
+  font-family: $font-3;
+  font-size: $size;
+  font-weight: bold;
+  color: $color-4;
+}

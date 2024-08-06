@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import node from '../assets/images/icons/node.svg';
 import sass from '../assets/images/icons/sass.svg';
 import nextjs from '../assets/images/icons/nextjs.svg';

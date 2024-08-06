@@ -1,7 +1,5 @@
-import React from 'react';
-import Header from '../components/Header';
-
 import { motion } from 'framer-motion';
+import Header from '../components/Header';
 import ProjectCard from '../components/ProjectCard';
 
 const Achievements = () => {

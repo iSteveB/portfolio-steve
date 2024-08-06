@@ -1,14 +1,24 @@
-@import "./settings";
-@import "./header";
-@import './languageSwitcher';
-@import "./stack";
-@import "./navigation";
-@import "./socialNetwork";
-@import "./home";
-@import "./logo";
-@import "./contact";
-@import "./contactForm";
-@import "./portfolio.scss";
-@import "./achievements";
-@import "./projectCard";
-@import "./footer";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./bases/typo";
+@import "./bases/reset";
+
+
+@import "./globals";
+
+@import './components/languageSwitcher';
+@import "./components/stack";
+@import "./components/socialNetwork";
+@import "./components/contactForm";
+@import "./components/portfolio.scss";
+@import "./components/projectCard";
+
+@import "./layouts/header";
+@import "./layouts/logo";
+@import "./layouts/navigation";
+@import "./layouts/footer";
+
+@import "./pages/home";
+@import "./pages/achievements";
+@import "./pages/contact";

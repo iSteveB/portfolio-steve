@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sansita:wght@400;700&family=Sarala:wght@400;700&display=swap');
+
+$font-1: 'Righteous', sans-serif;
+$font-2: 'Sansita', sans-serif;
+$font-3: 'Sarala', sans-serif;
+
+body {
+  @include texture-1;
+  font-family: $font-3;
+  font-size: 1.5rem;
+  color: $color-2;
+}
+
+h1 {
+  @include header;
+  text-align: center;
+}
+
+h2 {
+  @include title-1;
+  position: relative;
+  margin: 56px 1.5rem;
+  text-align: center;
+
+
+  &::after {
+      content: '';
+      height: 8px;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translate(-50%);
+      border-radius: 5px;
+  }
+}
+
+h3 {
+  @include title-2;
+}
+
+strong {
+  @include body-highlight(1.5rem);
+}
