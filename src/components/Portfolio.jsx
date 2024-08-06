@@ -1,45 +1,15 @@
-import loongStory from '../assets/images/projects/loong-story.webp';
-import whereInTheWorld from '../assets/images/projects/where-in-the-world.webp';
-import yummyNouilles from '../assets/images/projects/yummy-nouilles.webp';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { projectsList } from '../data/projectsList.js';
 
 import externalLink from '../assets/images/icons/external-link.svg';
 
 const Portfolio = () => {
-	const { t } = useTranslation('translation');
-
-	const projectsList = [
-		{
-			id: 1,
-			name: 'Yummy Nouilles',
-			image: yummyNouilles,
-			hardSkills: ['Javascript', 'CSS3', 'API'],
-			address: 'https://yummynouilles.vercel.app/',
-			text: t('portfolio.project1.description'),
-		},
-		{
-			id: 2,
-			name: 'Where In The World',
-			image: whereInTheWorld,
-			hardSkills: ['Sass', 'React', 'API'],
-			address: 'https://world-map-v01.vercel.app/',
-			text: t('portfolio.project2.description'),
-		},
-		{
-			id: 3,
-			name: 'Loong Story',
-			image: loongStory,
-			hardSkills: ['React', 'Redux', 'Node.js', 'MongoDB', 'Sass'],
-			address: 'https://loongstory.onrender.com',
-			text: t('portfolio.project3.description'),
-		},
-	];
+	const lastProjects = projectsList.sort((a, b) => b.id - a.id).slice(0, 3);
 
 	const [activeIndex, setActiveIndex] = useState({
 		activeObject: null,
-		objects: projectsList,
+		objects: lastProjects,
 	});
 
 	const toogleClass = (index) => {
@@ -58,7 +28,7 @@ const Portfolio = () => {
 				initial={{ x: -100, opacity: 0 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.7, delay: 0.35 }}>
-				{projectsList.map((project, index) => {
+				{lastProjects.map((project, index) => {
 					return (
 						<div
 							key={index}
@@ -85,7 +55,7 @@ const Portfolio = () => {
 										href={project.address}
 										target='_blank'
 										rel='noreferrer'>
-										{t('common.haveALook')}{' '}
+										Visiter le site{' '}
 										<img
 											src={externalLink}
 											alt='external link'

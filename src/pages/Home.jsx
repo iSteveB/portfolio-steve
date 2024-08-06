@@ -1,20 +1,18 @@
 import DownloadCV from '../components/DownloadCV';
-import Header from '../components/Header';
-import Logo from '../components/Logo';
+import Header from '../components/layout/Header';
+import Logo from '../components/layout/Logo';
 import ContactForm from '../components/ContactForm';
 import Portfolio from '../components/Portfolio';
-import Footer from '../components/Footer';
+import Footer from '../components/layout/Footer';
 import Stack from '../components/Stack';
 
 import cleanCodeIcon from '../assets/images/icons/clean_code.png';
 import responsiveIcon from '../assets/images/icons/responsive.png';
 import speedIcon from '../assets/images/icons/speed.png';
 
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const Accueil = () => {
-	const { t } = useTranslation('translation');
 
 	return (
 		<div className='home'>
@@ -26,14 +24,14 @@ const Accueil = () => {
 						initial={{ x: -100, opacity: 0 }}
 						animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.3, delay: 0.3 }}>
-						{t('homepage.job')} React & Node.js
+						Développeur Web React & Node.js
 					</motion.h2>
 					<DownloadCV />
 				</div>
 			</div>
 
 			<section className='skills'>
-				<h2>{t('homepage.skills.title')}</h2>
+				<h2>Compétences</h2>
 
 				<div className='competences-container'>
 					<div className='competences'>
@@ -49,7 +47,7 @@ const Accueil = () => {
 							transition={{ duration: 0.4, delay: 0.4 }}>
 							<img src={speedIcon} alt='seo' />
 							<h5>Performance</h5>
-							<p>{t('homepage.skills.performance')}</p>
+							<p>Optimiser les sites web, pour augmenter la vitesse de chargement des pages et l&apos;expérience utilisateur.</p>
 						</motion.div>
 						<motion.div
 							initial={{
@@ -63,7 +61,7 @@ const Accueil = () => {
 							transition={{ duration: 0.8, delay: 0.8 }}>
 							<img src={cleanCodeIcon} alt='clean code' />
 							<h5>Clean Code</h5>
-							<p>{t('homepage.skills.cleanCode')}</p>
+							<p>Écrire du code facile à lire, à maintenir, et qui adhére aux bonnes pratiques.</p>
 						</motion.div>
 						<motion.div
 							initial={{
@@ -77,7 +75,7 @@ const Accueil = () => {
 							transition={{ duration: 0.7, delay: 1.2 }}>
 							<img src={responsiveIcon} alt='Responsive' />
 							<h5>Responsive</h5>
-							<p>{t('homepage.skills.responsive')}</p>
+							<p>Concevoir des sites web de qualité, adaptés aux écrans de chacun.</p>
 						</motion.div>
 					</div>
 				</div>
@@ -85,7 +83,7 @@ const Accueil = () => {
 			</section>
 
 			<section className='portfolio'>
-				<h2>{t('homepage.lastProjects.title')}</h2>
+				<h2>Derniers Projets</h2>
 				<Portfolio />
 			</section>
 
@@ -94,7 +92,7 @@ const Accueil = () => {
 				initial={{ x: -100, opacity: 0 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.7, delay: 0.35 }}>
-				<h2>{t('contact.letsTalk')}</h2>
+				<h2>Contactez-moi</h2>
 				<ContactForm />
 			</motion.section>
 

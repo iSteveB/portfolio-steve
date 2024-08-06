@@ -1,15 +1,12 @@
 import ContactForm from '../components/ContactForm';
-import Header from '../components/Header';
-
-import { useTranslation } from 'react-i18next';
+import Header from '../components/layout/Header';
 
 const Contact = () => {
-    const { t } = useTranslation('translation');
 
     return (
         <div className='contact'>
             <Header />
-            <h1>{t('contact.letsTalk')}</h1>
+            <h1>Contactez-moi</h1>
             <ContactForm />
         </div>
     );

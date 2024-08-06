@@ -1,19 +1,15 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Suspense } from 'react';
-import AnimatedRoutes from './components/AnimatedRoutes';
-import { AnimatePresence } from "framer-motion"
+import AnimatedRoutes from './components/routes/AnimatedRoutes';
 
 const App = () => {
-    return (
-        <Suspense fallback={null}>
-            <Router>
-                <AnimatePresence>
-                    <AnimatedRoutes />
-                </AnimatePresence>
-            </Router>
-        </Suspense>
-    );
+	return (
+		<Suspense fallback={null}>
+			<Router>
+				<AnimatedRoutes />
+			</Router>
+		</Suspense>
+	);
 };
 
 export default App;
-
