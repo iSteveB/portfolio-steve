@@ -20,7 +20,7 @@ const LastProjects = () => {
 	return (
 		<div className='portfolio'>
 			<motion.div
-				className='accordion page'
+				className='gallery page'
 				initial={{ x: -100, opacity: 0 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.5, delay: 0.25 }}>

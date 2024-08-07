@@ -24,7 +24,7 @@ const Portfolio = () => {
 	return (
 		<>
 			<motion.div
-				className='accordion'
+				className='gallery'
 				initial={{ x: -100, opacity: 0 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.7, delay: 0.35 }}>

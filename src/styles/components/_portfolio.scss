@@ -1,6 +1,7 @@
 .portfolio {
     h2 {
         position: relative;
+
         &::after {
             content: '';
             position: absolute;
@@ -14,7 +15,7 @@
         }
     }
 
-    .accordion {
+    .gallery {
         display: flex;
         min-width: 50%;
         max-width: 90%;
@@ -32,12 +33,12 @@
         overflow: hidden;
         position: relative;
     }
-    
+
     .image.active {
         flex-grow: 50;
         max-width: 100%;
     }
-    
+
     .image:not(.active) {
         flex-grow: 2;
     }
@@ -79,6 +80,7 @@
             display: inline-block;
             transition: all 0.2s ease-in-out;
         }
+
         a:hover {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -99,13 +101,14 @@
         0% {
             transform: translate(0, 0);
         }
+
         100% {
             transform: translate(10%, -10%);
         }
     }
 
     @media screen and (max-width: 800px) {
-        .accordion {
+        .gallery {
             flex-direction: column;
         }
 
@@ -128,6 +131,7 @@
             h3 {
                 font-size: 5vw;
             }
+
             p,
             a,
             a img {
@@ -150,9 +154,11 @@
         .text {
             padding: 0;
             padding-right: 56px;
+
             h3 {
                 font-size: 7vw;
             }
+
             p,
             a,
             a img {
