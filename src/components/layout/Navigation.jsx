@@ -6,32 +6,19 @@ const Navigation = ({ showMenu }) => {
 		<nav className={`navigation ${showMenu ? 'show-nav' : ''}`}>
 			<ul>
 				<li>
-					<NavLink
-						className={(navData) =>
-							navData.isActive ? 'nav-active' : ''
-						}
-						end
-						to='/'>
+					<NavLink className={(navData) => navData.isActive ? 'nav-active' : ''} end to='/'>
 						Accueil
 					</NavLink>
 				</li>
 
 				<li>
-					<NavLink
-						className={(navData) =>
-							navData.isActive ? 'nav-active' : ''
-						}
-						to='/realisations'>
+					<NavLink className={(navData) => navData.isActive ? 'nav-active' : ''} to='/realisations'>
 						Portfolio
 					</NavLink>
 				</li>
 
 				<li>
-					<NavLink
-						className={(navData) =>
-							navData.isActive ? 'nav-active' : ''
-						}
-						to='/contact'>
+					<NavLink className={(navData) => navData.isActive ? 'nav-active' : ''} to='/contact'>
 						Contact
 					</NavLink>
 				</li>

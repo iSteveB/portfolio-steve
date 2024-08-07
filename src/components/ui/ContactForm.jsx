@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import Input from './ui/Input';
-import SocialNetwork from './SocialNetwork';
+import Input from './Input';
+import SocialNetwork from '../SocialNetwork';
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
@@ -62,7 +62,7 @@ const ContactForm = () => {
         <Input
           type="text"
           name="lastname"
-          placeholder="lastName"
+          placeholder="Nom"
           value={formData.lastname}
           onChange={handleChange}
           required
@@ -70,7 +70,7 @@ const ContactForm = () => {
         <Input
           type="text"
           name="firstname"
-          placeholder="firstName"
+          placeholder="Prénom"
           value={formData.firstname}
           onChange={handleChange}
           required
@@ -78,7 +78,7 @@ const ContactForm = () => {
         <Input
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
           required

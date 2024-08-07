@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { projectsList } from '../data/projectsList';
 
-const ProjectCard = () => {
+const LastProjects = () => {
 	const [activeIndex, setActiveIndex] = useState({
 		activeObject: null,
 		objects: projectsList,
@@ -43,12 +43,12 @@ const ProjectCard = () => {
 									<h3>{project.name}</h3>
 									<p>{project.text}</p>
 									<div className='tags'>
-										{project.hardSkills.map((tag) => {
+										{project.tags.map((tag) => {
 											return <span key={tag}>{tag}</span>;
 										})}
 									</div>
 									<a
-										href={project.address}
+										href={project.link}
 										target='_blank'
 										rel='noreferrer'>
 										Visiter le site{' '}
@@ -67,4 +67,4 @@ const ProjectCard = () => {
 	);
 };
 
-export default ProjectCard;
+export default LastProjects;

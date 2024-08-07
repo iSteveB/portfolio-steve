@@ -1,4 +1,4 @@
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/ui/ContactForm';
 import Header from '../components/layout/Header';
 
 const Contact = () => {

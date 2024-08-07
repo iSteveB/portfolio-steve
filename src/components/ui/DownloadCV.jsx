@@ -1,4 +1,4 @@
-import curriculumVitae from '../assets/download/cv-steve-basse.pdf';
+import curriculumVitae from '../../assets/download/cv-steve-basse.pdf';
 import { motion } from 'framer-motion'
 
 const DownloadCV = () => {

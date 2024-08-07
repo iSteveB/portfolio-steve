@@ -47,12 +47,12 @@ const Portfolio = () => {
 									<h3>{project.name}</h3>
 									<p>{project.text}</p>
 									<div className='tags'>
-										{project.hardSkills.map((tag) => {
+										{project.tags.map((tag) => {
 											return <span key={tag}>{tag}</span>;
 										})}
 									</div>
 									<a
-										href={project.address}
+										href={project.link}
 										target='_blank'
 										rel='noreferrer'>
 										Visiter le site{' '}
