@@ -8,9 +8,9 @@ import travelAgency from '../assets/images/projects/travel-agency.webp';
 import comingSoon from '../assets/images/projects/coming-soon.webp';
 import calc from '../assets/images/projects/calculatrice.webp';
 import alstudio from '../assets/images/projects/alstudio.webp';
-import nina from '../assets/images/projects/nina.webp';
-import kasa from '../assets/images/projects/kasa.svg';
-import argentBank from '../assets/images/projects/argentBank.webp';
+// import nina from '../assets/images/projects/nina.webp';
+// import kasa from '../assets/images/projects/kasa.svg';
+// import argentBank from '../assets/images/projects/argentBank.webp';
 
 export const projectsList = [
 	{
@@ -116,7 +116,7 @@ export const projectsList = [
 	{
 		id: 11,
 		name: 'Nina Carducci',
-		image: nina,
+		image: '',
 		tags: ['HTML', 'CSS3', 'SEO'],
 		link: 'https://isteveb.github.io/ninacarducci.github.io/',
 		github: 'https://github.com/iSteveB/ninacarducci.github.io',
@@ -126,9 +126,9 @@ export const projectsList = [
 	{
 		id: 12,
 		name: 'Kasa',
-		image: kasa,
+		image: '',
 		tags: ['React', 'Sass'],
-		link: 'kasa-isteveb.vercel.app',
+		link: 'https://kasa-isteveb.vercel.app',
 		github: 'https://github.com/iSteveB/kasa',
 		description: 'Agence de location de logements.',
 		date: '06-2024',
@@ -136,7 +136,7 @@ export const projectsList = [
 	{
 		id: 13,
 		name: 'ArgentBank',
-		image: argentBank,
+		image: '',
 		tags: ['React', 'Redux', 'Swagger', 'API'],
 		link: 'https://argentbank-isteveb.vercel.app/',
 		github: 'https://github.com/iSteveB/ArgentBank',
