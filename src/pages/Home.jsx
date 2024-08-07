@@ -2,7 +2,7 @@ import DownloadCV from '../components/ui/DownloadCV';
 import Header from '../components/layout/Header';
 import Logo from '../components/layout/Logo';
 import ContactForm from '../components/ui/ContactForm';
-import Portfolio from '../components/Portfolio';
+import Gallery from '../components/Gallery';
 import Footer from '../components/layout/Footer';
 import Stack from '../components/Stack';
 
@@ -84,7 +84,7 @@ const Accueil = () => {
 
 			<section className='portfolio'>
 				<h2>Derniers Projets</h2>
-				<Portfolio />
+				<Gallery />
 			</section>
 
 			<motion.section

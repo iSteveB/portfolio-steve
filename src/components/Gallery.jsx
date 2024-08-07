@@ -4,7 +4,7 @@ import { projectsList } from '../data/projectsList.js';
 
 import externalLink from '../assets/images/icons/external-link.svg';
 
-const Portfolio = () => {
+const Gallery = () => {
 	const lastProjects = projectsList.sort((a, b) => b.id - a.id).slice(0, 3);
 
 	const [activeIndex, setActiveIndex] = useState({
@@ -45,7 +45,7 @@ const Portfolio = () => {
 							<div className='text-container'>
 								<div className='text'>
 									<h3>{project.name}</h3>
-									<p>{project.text}</p>
+									<p>{project.description}</p>
 									<div className='tags'>
 										{project.tags.map((tag) => {
 											return <span key={tag}>{tag}</span>;
@@ -71,4 +71,4 @@ const Portfolio = () => {
 	);
 };
 
-export default Portfolio;
+export default Gallery;
