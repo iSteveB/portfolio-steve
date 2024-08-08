@@ -8,23 +8,26 @@ import burgerButton from '../../assets/images/icons/burger-menu.svg';
 import closeButton from '../../assets/images/icons/close.svg';
 
 const Header = () => {
-	const [showMenu, setshowMenu] = useState(false);
-	const [small, setSmall] = useState(false);
+	const [showMenu, setShowMenu] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
 
 	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			window.addEventListener('scroll', () =>
-				setSmall(window.scrollY > 100)
-			);
-		}
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 100);
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
 	}, []);
 
-	const handleShowMenu = () => {
-		setshowMenu(!showMenu);
+	const toggleMenu = () => {
+		setShowMenu(prevShowMenu => !prevShowMenu);
 	};
 
 	return (
-		<div className={`header-container ${small ? 'small' : ''}`}>
+		<div className={`header-container ${isScrolled ? 'small' : ''}`}>
 			<div className='header'>
 				<Link to='/'>
 					<Logo size='s' />
@@ -33,7 +36,7 @@ const Header = () => {
 				<SocialNetwork />
 				<img
 					className='burger-menu'
-					onClick={handleShowMenu}
+					onClick={toggleMenu}
 					src={showMenu ? closeButton : burgerButton}
 					alt='Menu'
 				/>
