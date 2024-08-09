@@ -17,10 +17,24 @@
 
     .gallery {
         display: flex;
+        position: relative;
         min-width: 50%;
         max-width: 90%;
         height: 600px;
         margin: 4rem auto;
+
+        .image-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            .image-cover {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                aspect-ratio: 16/9;
+            }
+        }
     }
 
     .image {
@@ -32,10 +46,12 @@
         transition: all 0.5s ease-in-out;
         overflow: hidden;
         position: relative;
+        background: darken($color-1, 10%);
+
     }
 
     .image.active {
-        flex-grow: 50;
+        flex-grow: 75;
         max-width: 100%;
     }
 
@@ -53,6 +69,11 @@
         background: linear-gradient(360deg, black 0%, transparent 50%);
         color: $color-1;
         cursor: default;
+
+        .links {
+            display: flex;
+            gap: 2rem;
+        }
     }
 
     .text {

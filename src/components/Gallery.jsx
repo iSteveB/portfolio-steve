@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { projectsList } from '../data/projectsList.js';
+import { getProjectImage } from '../utils/getProjectImage.js';
 
 import externalLink from '../assets/images/icons/external-link.svg';
 
@@ -31,6 +32,7 @@ const Gallery = () => {
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.7, delay: 0.35 }}>
 				{lastProjects.map((project, index) => {
+					const { original } = getProjectImage(project.image);
 					return (
 						<div
 							key={index}
@@ -44,7 +46,7 @@ const Gallery = () => {
 							<div className='image-container'>
 								<img
 									className='image-cover'
-									src={project.image}
+									src={original}
 									alt={project.name}
 								/>
 							</div>
@@ -57,16 +59,32 @@ const Gallery = () => {
 											return <span key={tag}>{tag}</span>;
 										})}
 									</div>
-									<a
-										href={project.link}
-										target='_blank'
-										rel='noreferrer'>
-										Visiter le site{' '}
-										<img
-											src={externalLink}
-											alt='external link'
-										/>
-									</a>
+									<div className='links'>
+										{project.link && (
+											<a
+												href={project.link}
+												target='_blank'
+												rel='noreferrer'>
+												Visiter le site{' '}
+												<img
+													src={externalLink}
+													alt='external link'
+												/>
+											</a>
+										)}
+										{project.github && (
+											<a
+												href={project.github}
+												target='_blank'
+												rel='noreferrer'>
+												Voir le code{' '}
+												<img
+													src={externalLink}
+													alt='external link'
+												/>
+											</a>
+										)}
+									</div>
 								</div>
 							</div>
 						</div>

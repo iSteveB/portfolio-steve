@@ -52,7 +52,7 @@ export const projectsList = [
 	{
 		id: 6,
 		name: 'Order Summary Component',
-		image: 'order-summary',
+		image: 'order-component',
 		tags: ['HTML', 'CSS'],
 		link: 'https://order-summary-component-puce.vercel.app/',
 		github: 'https://github.com/iSteveB/Order-Summary-Component',
@@ -122,7 +122,7 @@ export const projectsList = [
 	{
 		id: 13,
 		name: 'ArgentBank',
-		image: 'argentBank',
+		image: 'argentbank',
 		tags: ['React', 'Redux', 'Swagger', 'API'],
 		link: null,
 		github: 'https://github.com/iSteveB/ArgentBank',
