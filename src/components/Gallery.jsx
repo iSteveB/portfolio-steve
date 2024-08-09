@@ -5,7 +5,9 @@ import { projectsList } from '../data/projectsList.js';
 import externalLink from '../assets/images/icons/external-link.svg';
 
 const Gallery = () => {
-	const lastProjects = projectsList.sort((a, b) => b.id - a.id).slice(0, 3);
+	const lastProjects = projectsList
+		.sort((a, b) => new Date(b.date) - new Date(a.date))
+		.slice(0, 3);
 
 	const [activeIndex, setActiveIndex] = useState({
 		activeObject: null,
@@ -38,10 +40,14 @@ const Gallery = () => {
 									? 'image active'
 									: 'image'
 							}
-							style={{
-								background: `url(${project.image}) center/cover`,
-							}}
 							onClick={() => toogleClass(index)}>
+							<div className='image-container'>
+								<img
+									className='image-cover'
+									src={project.image}
+									alt={project.name}
+								/>
+							</div>
 							<div className='text-container'>
 								<div className='text'>
 									<h3>{project.name}</h3>
