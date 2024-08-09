@@ -7,13 +7,12 @@ import Footer from '../components/layout/Footer';
 import Stack from '../components/Stack';
 
 import cleanCodeIcon from '../assets/images/icons/clean_code.png';
-import responsiveIcon from '../assets/images/icons/responsive.png';
+import seoIcon from '../assets/images/icons/seoIcon.png';
 import speedIcon from '../assets/images/icons/speed.png';
 
 import { motion } from 'framer-motion';
 
 const Accueil = () => {
-
 	return (
 		<div className='home'>
 			<Header />
@@ -47,7 +46,11 @@ const Accueil = () => {
 							transition={{ duration: 0.4, delay: 0.4 }}>
 							<img src={speedIcon} alt='seo' />
 							<h5>Performance</h5>
-							<p>Optimiser les sites web, pour augmenter la vitesse de chargement des pages et l&apos;expérience utilisateur.</p>
+							<p>
+								Optimiser les sites web, pour augmenter la
+								vitesse de chargement des pages et
+								l&apos;expérience utilisateur.
+							</p>
 						</motion.div>
 						<motion.div
 							initial={{
@@ -61,7 +64,10 @@ const Accueil = () => {
 							transition={{ duration: 0.8, delay: 0.8 }}>
 							<img src={cleanCodeIcon} alt='clean code' />
 							<h5>Clean Code</h5>
-							<p>Écrire du code facile à lire, à maintenir, et qui adhére aux bonnes pratiques.</p>
+							<p>
+								Écrire du code facile à lire, à maintenir, et
+								qui adhére aux bonnes pratiques.
+							</p>
 						</motion.div>
 						<motion.div
 							initial={{
@@ -73,9 +79,12 @@ const Accueil = () => {
 								transform: { translateY: 0 },
 							}}
 							transition={{ duration: 0.7, delay: 1.2 }}>
-							<img src={responsiveIcon} alt='Responsive' />
-							<h5>Responsive</h5>
-							<p>Concevoir des sites web de qualité, adaptés aux écrans de chacun.</p>
+							<img src={seoIcon} alt='SEO' />
+							<h5>SEO</h5>
+							<p>
+								Améliorer la visibilité en ligne en utilisant
+								des techniques de référencement naturel.
+							</p>
 						</motion.div>
 					</div>
 				</div>
