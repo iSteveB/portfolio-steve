@@ -16,7 +16,7 @@
     align-items: center;
     overflow: hidden;
     transition: all 0.4s;
-    border: 1px solid $color-3;
+    border: 1px solid $color-1;
 
     &:hover {
       transform: scale(1.05);
@@ -60,7 +60,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: $color-3;
+      background: $color-1;
       padding: 0 16px;
       border-radius: 20px 20px 0 0;
     }
@@ -80,8 +80,8 @@
 
       span {
         font-size: 0.8rem;
-        background: $color-3;
-        color: $color-2;
+        background: $color-2;
+        color: $color-1;
         margin-right: 8px;
         margin-bottom: 8px;
         padding: 0 8px;
