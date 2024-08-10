@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { projectsList } from '../data/projectsList.js';
-import { getProjectImage } from '../utils/getProjectImage.js';
+import { projectsList } from '../../data/projectsList.js';
+import { getProjectImage } from '../../utils/getProjectImage.js';
 
-import externalLink from '../assets/images/icons/external-link.svg';
+import externalLink from '../../assets/images/icons/external-link.svg';
 
 const Gallery = () => {
 	const lastProjects = projectsList

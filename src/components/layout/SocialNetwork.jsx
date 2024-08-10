@@ -1,6 +1,6 @@
-import githubIcon from "../assets/images/icons/invertocat.svg"
-import linkedinIcon from "../assets/images/icons/linkedin.svg"
-import codepenIcon from "../assets/images/icons/codepen.svg"
+import githubIcon from "../../assets/images/icons/invertocat.svg"
+import linkedinIcon from "../../assets/images/icons/linkedin.svg"
+import codepenIcon from "../../assets/images/icons/codepen.svg"
 
 const SocialNetwork = () => {
     return (

@@ -1,0 +1,90 @@
+.collapse {
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 1px 1px 20px #dae3f2;
+
+  &__title {
+    position: relative;
+    list-style: none;
+    color: $color-2;
+    background-color: $color-1;
+    font-weight: 700;
+    padding: 10px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      content: "";
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      background: no-repeat center url('../assets/images/icons/collapseArrow.svg');
+      transition: transform 0.2s;
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    transition: all .3s ease-in-out;
+    border-radius: 0 0 5px 5px;
+    background: none;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px;
+
+      &--item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          img {
+              width: 50px;
+              height: 50px;
+              margin-bottom: 5px;
+              border-radius: 5px;
+              background-color: $color-1;
+              padding: 16px;
+              object-fit: contain;
+          }
+
+          span {
+              font-size: 0.8rem;
+          }
+      }
+  }
+  }
+
+  &.open {
+    & .collapse__content {
+      max-height: 280px;
+      transition: all .3s ease-in-out;
+    }
+
+    & .collapse__title::after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 0.8rem;
+
+      &::after {
+        background: no-repeat center url('../assets/icons/arrow-small.svg');
+      }
+    }
+
+    &__content__text,
+    &__content__list {
+      font-size: 0.8rem;
+    }
+  }
+}

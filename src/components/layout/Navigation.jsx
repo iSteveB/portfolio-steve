@@ -13,7 +13,7 @@ const Navigation = ({ showMenu }) => {
 
 				<li>
 					<NavLink className={(navData) => navData.isActive ? 'nav-active' : ''} to='/realisations'>
-						Portfolio
+						Savoir-faire
 					</NavLink>
 				</li>
 

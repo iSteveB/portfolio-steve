@@ -1,0 +1,18 @@
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  &__column {
+    width: 100%;
+  }
+}

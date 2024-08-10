@@ -7,12 +7,12 @@
 
 @import "./globals";
 
-@import './components/languageSwitcher';
-@import "./components/stack";
+@import './components/collapse';
+@import './components/techStack';
+@import "./components/banner";
 @import "./components/socialNetwork";
 @import "./components/contactForm";
 @import "./components/gallery.scss";
-@import "./components/lastProjects";
 
 @import "./layouts/header";
 @import "./layouts/logo";

@@ -2,9 +2,9 @@ import DownloadCV from '../components/ui/DownloadCV';
 import Header from '../components/layout/Header';
 import Logo from '../components/layout/Logo';
 import ContactForm from '../components/ui/ContactForm';
-import Gallery from '../components/Gallery';
+import Gallery from '../components/ui/Gallery';
 import Footer from '../components/layout/Footer';
-import Stack from '../components/Stack';
+import Banner from '../components/ui/Banner';
 
 import cleanCodeIcon from '../assets/images/icons/clean_code.png';
 import seoIcon from '../assets/images/icons/seoIcon.png';
@@ -88,7 +88,7 @@ const Accueil = () => {
 						</motion.div>
 					</div>
 				</div>
-				<Stack direction='left' />
+				<Banner direction='left' />
 			</section>
 
 			<section className='portfolio'>

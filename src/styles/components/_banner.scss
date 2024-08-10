@@ -1,4 +1,4 @@
-.stack-container {
+.banner-container {
     vertical-align: middle;
     display: flex;
     width: 100%;
@@ -6,16 +6,17 @@
     margin: 0;
     padding: 0;
 
-    .stack-move-left,
-    .stack-move-right {
+    .banner-move-left,
+    .banner-move-right {
         display: flex;
         white-space: nowrap;
     }
 
-    .stack-move-left {
+    .banner-move-left {
         animation: scrollLeft 35s linear infinite;
     }
-    .stack-move-right {
+
+    .banner-move-right {
         animation: scrollRight 30s linear infinite;
     }
 
@@ -33,25 +34,28 @@
         0% {
             transform: translate(0, 0);
         }
+
         100% {
             transform: translate(-100%, 0);
         }
     }
-    
+
     @keyframes scrollRight {
         0% {
             transform: translate(-100%, 0);
         }
+
         100% {
             transform: translate(0, 0);
         }
     }
 
-    @media screen and (max-width: 580px){
-        .stack-move-left {
+    @media screen and (max-width: 580px) {
+        .banner-move-left {
             animation: scrollLeft 20s linear infinite;
         }
-        .stack-move-right {
+
+        .banner-move-right {
             animation: scrollRight 20s linear infinite;
         }
     }

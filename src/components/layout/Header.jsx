@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from './Logo';
 import Navigation from './Navigation';
-import SocialNetwork from '../SocialNetwork';
+import SocialNetwork from './SocialNetwork';
 import burgerButton from '../../assets/images/icons/burger-menu.svg';
 import closeButton from '../../assets/images/icons/close.svg';
 
@@ -23,7 +23,7 @@ const Header = () => {
 	}, []);
 
 	const toggleMenu = () => {
-		setShowMenu(prevShowMenu => !prevShowMenu);
+		setShowMenu((prevShowMenu) => !prevShowMenu);
 	};
 
 	return (
