@@ -125,7 +125,7 @@ export const projectsList = [
 		image: 'argentbank',
 		tags: ['React', 'Redux', 'Swagger', 'API'],
 		link: null,
-		github: 'https://github.com/iSteveB/ArgentBank',
+		github: 'https://github.com/iSteveB/ArgentBank-website',
 		description: "Intégration du frontend d'une banque en ligne.",
 		date: '2024-07-01',
 	},
