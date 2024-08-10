@@ -1,0 +1,39 @@
+.formation {
+  margin: 0 20px;
+  background-color: $color-1;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h3 {
+      color: $color-2;
+  }
+
+  p {
+      color: $color-3;
+      font-size: 1.3rem;
+      line-height: 18px;
+  }
+
+  span {
+      color: $color-3;
+      font-size: 1.1rem;
+  }
+
+  ul {
+      padding-left: 20px;
+      margin-top: 10px;
+
+      li {
+          margin-bottom: 5px;
+          list-style-type:disc;
+          // color of list items
+          color: $color-2;
+
+          strong {
+              color: $color-4;
+          }
+      }
+  }
+}
