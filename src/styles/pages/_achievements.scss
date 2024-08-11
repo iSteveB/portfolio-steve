@@ -20,4 +20,14 @@
             border-radius: 5px;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 8vw;
+        }
+
+        h2 {
+            font-size: 6vw;
+        }
+    }
 }
