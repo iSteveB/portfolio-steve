@@ -44,6 +44,9 @@
             transform: scale(1.1);
             color: $color-4;
         }
+        &img {
+            background-color: red;
+        }
     }
 }
 
