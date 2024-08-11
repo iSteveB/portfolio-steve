@@ -28,12 +28,24 @@
       li {
           margin-bottom: 5px;
           list-style-type:disc;
-          // color of list items
           color: $color-2;
 
           strong {
               color: $color-4;
           }
       }
+  }
+
+  @media screen and (max-width: 600px) {
+
+      h3 {
+          font-size: 4vw;
+      }
+
+      p,
+      span, li, strong {
+          font-size: 3vw;
+      }
+
   }
 }

@@ -76,7 +76,7 @@
 
   @media (max-width: 768px) {
     &__title {
-      font-size: 0.8rem;
+      font-size: 1.3rem;
 
       &::after {
         background: no-repeat center url('../assets/icons/arrow-small.svg');
@@ -84,7 +84,7 @@
     }
 
     &__content__list {
-      font-size: 0.8rem;
+      font-size: 2rem;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
