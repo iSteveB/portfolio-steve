@@ -10,7 +10,7 @@ const Formation = () => {
         >
             <h3>Développeur / Intégrateur Web</h3>
             <p>Titre RNCP 5 - @OpenClassrooms</p>
-            <span>Mai 2024 - Août 2024</span>
+            <span>Mars 2024 - Août 2024</span>
             <ul>
                 <li>Conception et développement d&apos;interfaces utilisateurs avec <strong>React</strong>.</li>
                 <li><strong>Collaboration</strong> avec des designers pour traduire des maquettes en <strong>applications fonctionnelles</strong>.</li>
